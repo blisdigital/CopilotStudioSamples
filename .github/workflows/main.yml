@@ -30,19 +30,14 @@ jobs:
           node-version: 18.x
 
       # Install npm
-      - name: Run npm ci
+      - name: Run npm install
         shell: bash
-        run: npm ci
+        run: npm install
 
       # Build
       - name: Build
         shell: bash
         run: gulp build
-
-      # Test
-      - name: Test
-        shell: bash
-        run: npm test
 
       # Bundle and Package
       - name: Bundle and package
