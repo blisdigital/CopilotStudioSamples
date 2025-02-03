@@ -2,7 +2,7 @@ name: "SPFx CICD"
 description: "Build, bundle, package, test and deploys sppkg"
 on:
   pull_request:
-    branches: 
+    branches:
       - main
   push:
     branches:
@@ -14,13 +14,13 @@ jobs:
   CI-SPFx:
     runs-on: ubuntu-latest
 
-    defaults: 
-      run: 
- 	working-directory: SharePointSSOComponent
+    defaults:
+      run:
+        working-directory: SharePointSSOComponent
 
     steps:
 
-      # Node.js runtime 
+      # Node.js runtime
       - name: Node.js 18.x
         uses: actions/setup-node@v1
         with:
