@@ -19,6 +19,9 @@ jobs:
         working-directory: SharePointSSOComponent
 
     steps:
+      # Checkout code
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
       # Node.js runtime
       - name: Node.js 18.x
